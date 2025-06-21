@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoffeeHouse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Login Hero Section-->
+    <section class="hero" id="login-section">
+
+        <!-- login-box here -->
+        <div class="login-box">
+            <img src="coffee.4.jpg" alt="coffeeHouse Logo" class="logo">
+            <h2>Welcome to coffeeHouse</h2>
+            <form onsubmit="showWebsite(event)">
+                <input type="text" placeholder="username" required>
+                <input type="password" placeholder="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+<div id="main-site" style="display: none;">
+     <header>
+            <img src="coffee.4.jpg" alt="CoffeeHouse Logo" class="logo-small">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav> 
+         </header>
+
+         <div>
+            
+                     <!--Home Section-->
+         <section class="home-hero" id="home">
+            <h1>Welcome to CoffeeHouse</h1>
+            <p>Your Cozy Spot for the Perfect Brew </p>
+         </section>
+
+         <!--Menu/ Popular Picks-->
+         <section class="features" id="menu">
+            <h2>Popular Picks</h2>
+            
+            <div class="card-item">
+                <img src="coffee.5.jpg" alt="cappuccino">
+              <div class="menu-text">
+              <h3>Cappucino</h3>
+              <p>Rich and Foamy Delight</p>
+              </div>
+            </div>
+
+            <div class="card-item">
+                <img src="coffee.6.jpg" alt="Latte">
+                <div class="menu-text">
+                <h3>Latte</h3>
+                <p>Silky smooth and creamy.</p>
+                </div>
+            </div>
+
+            <div class="card-item">
+                <img src="coffee.7.jpg" alt="Espresso" class="es">
+                <div clss="menu-text">
+                <h3>Espresso</h3>
+                <p>Strong and Bold Flavour</p>
+                </div>
+            </div>
+            
+         </div>
+         </section>
+
+         <!--About Section-->
+         <section class="about" id="about">
+            <h2>About us </h2>
+            <p>We're passionate about coffee, community, and cozy vibes. Every cup is crafted with love and a smile! </p>
+         </section>
+
+         <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p>Email:contact@coffeehouse.com</p>
+            <p>Location: 123 Brew Street, Caffeine</p>
+            <p>Opening Hours: Mon - Sat: 8am-8pm</p>
+         </section>
+
+        
+         <!-- JavaScript to Switch Views -->
+  <script>
+    function showWebsite(event) {
+      event.preventDefault();
+      document.getElementById('login-section').style.display = 'none';
+      document.getElementById('main-site').style.display = 'block';
+    }
+  </script>
+
+</div>     
+</body>
+</html>
